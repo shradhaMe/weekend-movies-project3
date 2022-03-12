@@ -25,6 +25,7 @@ const Form = (props) => {
     <div>
       <form onSubmit={event => handleSubmit(event)} className="movieSearchForm">
         <h2>Weekend Movies</h2>
+        <label htmlFor="search"></label>
         <input type="search" placeholder={'Type your Movie'} id="search" onChange={handleUserChoice} value={value} />
         <button className="searchButton">Search</button>
         {error && <p>{error}</p>}
