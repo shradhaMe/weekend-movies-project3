@@ -29,7 +29,6 @@ h1{
 
 h2{
   margin-bottom: 37px;
- 
 }
 
 
@@ -71,7 +70,10 @@ h3{
     box-shadow: 0 4px 15px 5px rgba(65, 132, 234, 0.75);
 }
 
-
+button:focus{
+    background-image: linear-gradient(to right, #b7e2fc, #4481eb, #c3e7fd, #3f86ed);
+    box-shadow: 0 4px 15px 5px rgba(65, 132, 234, 0.75);
+}
 
 .footer{
   position: fixed;
@@ -97,6 +99,7 @@ border-radius:20px;
 margin:65px 20px 20px 20px;
 display:flex;
 justify-content: center;
+margin-bottom: 30px;
 }
 
 img{
@@ -109,6 +112,14 @@ img{
 
 .back{
   color:#E11584;
+  padding:12px;
+  font-size: 18px;
+}
+
+.back:hover{
+  background-color:whitesmoke;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
   
@@ -121,4 +132,10 @@ img{
     border-radius: 20px;
     display:block;
     margin:0 auto;
+  }
+
+  @media (max-width:760){
+    .kmHwVe{
+      width:50%;
+    }
   }
