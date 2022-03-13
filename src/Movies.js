@@ -31,7 +31,7 @@ const Movies = (props) => {
   return (
     <>
       <Form onSubmit={onSubmit} />
-      {movies && movies.length === 0 && <p>Your search did not return any movies. Please try again with another search.</p>}
+      {movies && movies.length === 0 && <p className="error">Your search did not return any movies. Please try again with another search.</p>}
       <MoviesWrapper>
         {movies && movies.map((movieDetails) => (
           <Movie movieDetails={movieDetails} />

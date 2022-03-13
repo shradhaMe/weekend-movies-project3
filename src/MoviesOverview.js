@@ -25,7 +25,7 @@ const MoviesOverview = () => {
   const { original_title, tagline, overview, poster_path } = movie;
   return (
     <div className="poster">
-      <Link to={"/"}>Back</Link>
+      <Link to={"/"}><span className='back'>Back</span></Link>
       <div className="description">
         <h2>{original_title}</h2>
         <h3>{tagline}</h3>

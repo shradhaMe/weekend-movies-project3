@@ -29,6 +29,14 @@ h1{
 
 h2{
   margin-bottom: 37px;
+ 
+}
+
+
+h3{
+  text-align: center;
+  margin-top: 60px;
+   text-shadow: 0 0 11px #FEF24E, 0 0 11px #0000ff;
 }
 
   form{
@@ -80,7 +88,37 @@ h2{
   text-shadow: 0 0 11px #ff0000, 0 0 11px #fff;
 }
 
-  
+.MovieEach{
+background-color: whitesmoke;
+width:450px;
+height:450px;
+list-style: none;
+border-radius:20px;
+margin:65px 20px 20px 20px;
+display:flex;
+justify-content: center;
+}
 
+img{
+  width:370px;
+  height:370px;
+  border-radius: 20px;
+  display:block;
+  margin-top:40px
+}
+
+.back{
+  color:#E11584;
+}
 
   
+.error{
+  text-align: center;
+  font-size: 25px;
+}
+
+  .poster-image img{
+    border-radius: 20px;
+    display:block;
+    margin:0 auto;
+  }
