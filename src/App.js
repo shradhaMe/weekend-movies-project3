@@ -8,20 +8,20 @@ import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <AppWrapper>
+    <div className="AppWrapper">
       <Header />
       <Routes>
         <Route exact path="/" element={<Movies />} />
         <Route path="/:movieId" element={<MoviesOverview />} />
       </Routes>
       <Footer />
-    </AppWrapper>
+    </div>
   );
 }
 
-const AppWrapper = styled.div`
-  width: 1200px;
-  margin: 0 auto;
-`;
+// const AppWrapper = styled.div`
+//   width: 1200px;
+//   margin: 0 auto;
+// `;
 
 export default App;

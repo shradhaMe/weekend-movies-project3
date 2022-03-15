@@ -22,7 +22,7 @@ const Form = (props) => {
   }
 
   return (
-    <div>
+    <div className="formOne">
       <form onSubmit={event => handleSubmit(event)} className="movieSearchForm">
         <h2>Weekend Movies</h2>
         <label htmlFor="search"></label>

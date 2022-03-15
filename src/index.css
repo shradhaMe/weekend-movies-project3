@@ -10,6 +10,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 
+
 body{
   background-image:url(./BackgroundBlue.jpg);
   background-position: center;
@@ -17,6 +18,29 @@ body{
   min-height: 100vh;
   color:whitesmoke;
   background-size: cover;
+}
+.AppWrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+  /* display:flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  
+}
+
+.iDcIMA{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* flex-direction: column; */
+  /* align-items: center; */
+}
+
+
+
+ul{
+  padding:0;
+  margin:0;
 }
 
 
@@ -28,30 +52,43 @@ h1{
 }
 
 h2{
-  margin-bottom: 37px;
+  text-align: center;
 }
 
 
 h3{
   text-align: center;
-  margin-top: 60px;
    text-shadow: 0 0 11px #FEF24E, 0 0 11px #0000ff;
 }
 
+ description p {
+   padding:20px;
+   background-color: #101D6D;
+   border-radius: 20px;
+ }
+
   form{
     text-align: center;
-    width:40%;
-    margin:0 auto;
+    width:650px;
+    /* margin:0 auto; */
     padding:10px 20px 100px;
     border-radius: 20px;
     background-color: #304b9f;
     box-shadow: -18px 23px 9px 0 rgb(0 0 0 / 50%);
+    margin:0;
+  }
+
+
+  .formOne{
+    /* width:70%; */
+    display:flex;
+    justify-content:space-around;
   }
 
   input{
     border-radius: 25px;
     padding:16px;
-    width:400px;
+    width: 50%;
     margin-bottom: 50px;
     border: 2px solid transparent;
     color:#191919;
@@ -60,7 +97,7 @@ h3{
   button{
     border-radius: 25px;
     padding:16px;
-    width:150px;
+    width:20%;
     border: 2px solid transparent;
     color:#191919;
   }
@@ -74,6 +111,8 @@ button:focus{
     background-image: linear-gradient(to right, #b7e2fc, #4481eb, #c3e7fd, #3f86ed);
     box-shadow: 0 4px 15px 5px rgba(65, 132, 234, 0.75);
 }
+
+
 
 .footer{
   position: fixed;
@@ -113,7 +152,18 @@ img{
 .back{
   color:#E11584;
   padding:12px;
-  font-size: 18px;
+  font-size: 22px;
+}
+
+.poster a {
+  text-decoration: none;
+}
+
+.description p {
+   background-color: #101D6D;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 20px 20px;
 }
 
 .back:hover{
@@ -134,8 +184,90 @@ img{
     margin:0 auto;
   }
 
-  @media (max-width:760){
-    .kmHwVe{
+  @media (max-width:760px){
+     body{
+       background-repeat: repeat-y;
+      min-height: 100vh;
+     }
+
+     .header{
+      width:100%;
+      text-align: center;
+    }
+
+    form{
+      width:84%;
+    }
+
+    form input{
+      display: block;
+      width:80%;
+    }
+
+    button{
+      width:35%;
+    }
+
+    img{
+    max-width: 100%;
+    max-height: 100%;
+    }
+
+
+    .MoviesWrapper{
+      display:flex;
+      justify-content: space-evenly;
+    }
+    
+    .footer{
+      width:100%;
+      text-align: center;
+    }
+
+  }
+
+
+  @media(max-width:500px){
+    form{
+      width:90%;
+      padding:4%;
+    }
+
+    form input{
+      display: block;
+      width:99%;
+    }
+    
+    button{
       width:50%;
     }
+
+    .header{
+      width:100%;
+    }
+
+    /* .iDcIMA{
+     display:flex;
+     flex-direction: column;
+     align-items: center; */
+
+    .MovieEach{
+      display:block;
+      display:flex;
+      justify-content: center;
+      width:93%;
+      margin:0 auto;
+      padding:0 4px;
+    }
+
+    img{
+      max-width: 100%;
+
+    }
+
+    .footer{
+      width:100%;
+      text-align: center;
+    }
+    
   }
