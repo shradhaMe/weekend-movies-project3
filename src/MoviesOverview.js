@@ -16,10 +16,10 @@ const MoviesOverview = () => {
       },
     }).then((res) => {
       const movieResults = res.data;
-      console.log(movieResults)
+
       setMovies(movieResults);
     })
-  }, []);
+  }, [movieId]);
 
 
   const { original_title, tagline, overview, poster_path } = movie;
