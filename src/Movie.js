@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import { Link } from 'react-router-dom';
 
 const Movie = (props) => {
@@ -22,17 +21,6 @@ const Movie = (props) => {
   );
 };
 
-// const MovieWrapper = styled.li`
-//   width: 300px;
-//   height: 500px;
-//   border: 1px solid gray;
-//   margin-right: 15px;
-//   margin-bottom: 25px;
 
-//   img {
-//     width: 300px;
-//     height: 300px;
-//   }
-// `;
 
 export { Movie };

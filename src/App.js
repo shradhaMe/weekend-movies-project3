@@ -1,5 +1,4 @@
 import './App.css';
-import styled from "styled-components";
 import { Movies } from "./Movies";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -19,9 +18,6 @@ function App() {
   );
 }
 
-// const AppWrapper = styled.div`
-//   width: 1200px;
-//   margin: 0 auto;
-// `;
+
 
 export default App;
