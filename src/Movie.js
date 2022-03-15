@@ -6,7 +6,7 @@ const Movie = (props) => {
   const IMAGE_URL_PREFIX = `https://image.tmdb.org/t/p/w500`;
 
   return (
-    < div className="MovieWrapper">
+    <div className="movie-wrapper">
       <h3>{movieDetails.title}</h3>
       <ul className="Movies">
         <li key={movieDetails.id} className="MovieEach">
@@ -16,7 +16,6 @@ const Movie = (props) => {
           </Link>
         </li>
       </ul>
-
     </div>
   );
 };

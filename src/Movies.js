@@ -33,8 +33,8 @@ const Movies = (props) => {
       <Form onSubmit={onSubmit} />
       {movies && movies.length === 0 && <p className="error">Your search did not return any movies. Please try again with another search.</p>}
       <MoviesWrapper>
-        {movies && movies.map((movieDetails) => (
-          <Movie movieDetails={movieDetails} />
+        {movies && movies.map((movieDetails, index) => (
+          index < 10 && <Movie movieDetails={movieDetails} />
         ))}
       </MoviesWrapper>
     </>
