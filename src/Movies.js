@@ -46,6 +46,7 @@ const MoviesWrapper = styled.ul`
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  justify-content: center;
 `;
 
 export { Movies };
