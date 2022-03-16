@@ -2,9 +2,9 @@
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <footer className="footer">
       <p className="Text">Created by Shradha Mehta at Juno College</p>
-    </div>
+    </footer>
   )
 }
 
